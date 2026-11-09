@@ -7,3 +7,5 @@
 - 3 наследника: `PrintTask`, `MathTask`, `DownloadTask`.
 - Своя реализация двоичной кучи (максимальная куча).
 - Методы `push` (добавить с приоритетом) и `pop` (выполнить самую приоритетную).
+- g++ -std=c++11 -Wall -Wextra main.cpp -o task_queue
+./task_queue
