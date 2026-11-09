@@ -8,7 +8,7 @@ public:
 };
 
 //  Наследники 
-class PrintTask : public Task {
+class PrintTask : public Task { //печать текста
     std::string text;
 public:
     PrintTask(std::string t) : text(t) {}
@@ -17,7 +17,7 @@ public:
     }
 };
 
-class MathTask : public Task {
+class MathTask : public Task { //математика
     int a, b;
 public:
     MathTask(int x, int y) : a(x), b(y) {}
@@ -26,7 +26,7 @@ public:
     }
 };
 
-class DownloadTask : public Task {
+class DownloadTask : public Task { //скачивание
     std::string filename;
 public:
     DownloadTask(std::string f) : filename(f) {}
@@ -39,7 +39,7 @@ public:
 class TaskQueue {
 private:
     struct Node {
-        Task* task;
+        Task* task; //указатель на задачу
         int priority;
     };
     
